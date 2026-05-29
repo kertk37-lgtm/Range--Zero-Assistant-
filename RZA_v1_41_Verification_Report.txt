@@ -1,0 +1,42 @@
+RZA v1.41 VERIFICATION REPORT
+
+Package inspected:
+RZA_v1_41_controlled_workflow_refinement.zip
+
+Code/package checks performed:
+1. ZIP contents inspected.
+2. index.html extracted and reviewed.
+3. Local app references checked for missing PDF/image assets.
+4. Inline JavaScript extracted and syntax-checked with Node.
+5. Regression math suite run.
+6. Extended randomized perspective/sensitivity suite run.
+
+Static package results:
+- index.html present: PASS
+- README.txt present: PASS
+- target PDFs present: PASS
+- image assets present: PASS
+- local href/src references missing files: PASS, none missing
+- JavaScript syntax check: PASS
+
+Regression math results:
+- 96 two-point cases: PASS
+- 216 four-point perspective cases: PASS
+- 60 zero-axis formatting cases: PASS
+- flyer exclusion centroid check: PASS
+- extreme-spread group-size check: PASS
+
+Extended randomized validation results:
+- 2,000 randomized perspective cases: PASS
+- 2,000 fiducial drift sensitivity cases: PASS
+- 1,000 shot-marking noise cases: PASS
+- maximum homography roundtrip error: effectively zero in software simulation
+- 2 px fiducial drift: 94.4% unchanged; worst observed total click delta 1
+- 5 px fiducial drift: 87.4% unchanged; worst observed total click delta 2
+- 2 px shot-marking noise: 96.5% unchanged; worst observed total click delta 1
+
+Verification conclusion:
+No code-level math, direction, formatting, syntax, or packaging failure was found in the inspected v1.41 package. The build is suitable for GitHub Pages testing and controlled physical validation.
+
+Caution:
+This does not replace real-world testing with printed targets, real photos, range lighting, camera angle, human tap precision, or live-fire results. It confirms that the packaged software and synthetic math/geometry behavior are functioning as expected.

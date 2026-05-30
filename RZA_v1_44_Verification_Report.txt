@@ -1,0 +1,20 @@
+RZA v1.44 Clean Target Normalization - Verification Report
+
+Scope:
+- Built from v1.42 locked baseline.
+- Preserved app math and workflow logic.
+- Updated visible app shell version to v1.44.
+- Removed 4-point fiducial graphics from instruction/assembly pages.
+- Retained standardized TL/TR/BL/BR 4-point APP ALIGN markers on operational target pages.
+- Large-format duplex instruction backs are clean; target fronts retain operational fiducials.
+
+Validation performed locally:
+- Package integrity check.
+- JavaScript syntax check.
+- PDF page count check.
+- Render spot-checks for target and instruction pages.
+- Target marker placement pass across operational pages.
+
+Notes:
+- v1.42 should remain archived as rollback baseline.
+- v1.44 is intended to correct target/PDF consistency problems seen in v1.43/v1.43a.

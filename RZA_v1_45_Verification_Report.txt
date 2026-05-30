@@ -1,0 +1,34 @@
+RZA v1.45 Unified APP ALIGN Standardization - Verification Report
+
+Baseline: RZA v1.44 Clean Target Normalization.
+
+Scope applied:
+- Preserved validated math/workflow code from v1.44.
+- Updated visible app/version references to v1.45.
+- Standardized operational single-page target packs to the enhanced concentric APP ALIGN top fiducial system.
+- Preserved four corner TL/TR/BL/BR APP ALIGN markers using one consistent edge-mounted marker language.
+- Reworked large-format targets toward assembled-plane APP ALIGN behavior: only the assembled target outer corners carry TL/TR/BL/BR markers, and the center top tile carries the enhanced top APP ALIGN reference.
+- Removed repeated page-level corner marker behavior from large-format internal tiles.
+- Kept large-target duplex instruction/back pages clean and non-operational.
+- Preserved prior grid hierarchy and color-laser print philosophy.
+
+Operational model locked:
+1. Print target.
+2. Assemble if needed.
+3. Capture clean hung target photo before firing.
+4. Shoot.
+5. Capture final shot-state target photo.
+6. APP ALIGN / perspective correction.
+7. Camera suggestion and/or Apple Pencil shot confirmation.
+8. Recommendation generation.
+9. Apply correction.
+10. Confirm zero.
+
+Verification summary:
+- PDF page counts preserved.
+- v1.45 version string appears in app shell.
+- v1.44/v1.40 version strings removed from app shell.
+- Large-format targets follow assembled-plane APP ALIGN philosophy rather than repeated page-level fiducials.
+
+Important note:
+Large-format targets now follow the assembled-plane philosophy. Do not treat each tile as an independent APP ALIGN target unless a future dedicated tile-level mode is explicitly added.
